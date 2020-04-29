@@ -1,0 +1,79 @@
+\chapter{Nomecapitolo\label{sec:labelcapitolo}}
+\lettrine[findent=1.5em]{T}esto.
+
+    \section{Nomesezione\label{sec:labelsezione}}
+    
+    Esempio di figura:
+    \begin{figure}[htp]
+        \centering
+        \includegraphics[width=\textwidth]{img/nomefigura.pdf}
+        \caption[Caption figura per menu]{Caption figura mostrata contestualmente}
+        \label{fig:labelfigura}
+    \end{figure}
+    
+    Paragrafo
+    
+    Paragrafo
+    
+    \subsection{Nomesottosezione\label{sec:labelsottosezione}}
+    
+    Esempio lista:
+
+    \begin{itemize}
+        \item item:
+            \begin{enumerate}
+                \item subitem.
+                \label{lst:labelsublist}
+            \end{enumerate}
+        \label{lst:labellist}
+    \end{itemize}
+    
+    Esempio counter:
+    
+    \newcounter{i}
+    \setcounter{i}{1}
+    
+    \subsection{Subsection\label{sec:labelsubsection}}
+    \begin{itemize}
+        \item RO$0\thei$: incrementa contatore \stepcounter{i}
+        \item RO$0\thei$: incrementa contatore \stepcounter{i}
+        \label{lst:labellist}
+    \end{itemize}
+    
+    Riporto il contatore a 1:
+    \setcounter{i}{1}
+    
+    \subsection{Subsection \label{sec:labelsubsection}}
+    \begin{itemize}
+        \item RD$0\thei$: incremento il contatore \stepcounter{i}
+        \label{lst:labellist}
+    \end{itemize}
+    
+    Testo evidenziato: \textit{backend}
+
+    Esempio figura sulla destra:
+    
+    \begin{wrapfigure}[5]{r}{2cm}
+        \centering
+        \def\svgwidth{1.5cm}
+        \input{img/immagine_generata_con_inkscape}
+        \caption[Caption menu per immagine]{\unskip}
+        
+        \begin{small}
+            Caption contestuale
+        \end{small}
+        \label{fig:labelimmagine}
+    \end{wrapfigure}
+    Testo.
+    
+    \bigskip
+    Testo
+    \bigskip\bigskip
+    
+    Da usare per andare a pagina nuova:
+    \pagebreak
+
+    Per nuova pagina "stiracchiando" il contenuto:
+    \clearpage
+
+    Esempio acronimo: \ac{DBMS}

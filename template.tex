@@ -1,0 +1,52 @@
+% Template per relazioni
+
+\documentclass[10pt,                   
+               a4paper,
+               twoside,
+               openright                           
+               titlepage,
+               headinclude,
+               footinclude,
+               numbers=noenddot,
+               cleardoublepage=empty]{scrbook}
+\usepackage{type1ec}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{lettrine}
+\usepackage{calligra}
+\usepackage[utf8]{inputenc}
+\usepackage[english, italian]{babel}
+\usepackage[autostyle,italian=guillemets]{csquotes}
+\usepackage[backref,hyperref,square,style=philosophy-modern,autolang=hyphen,backend=biber]{biblatex}
+\usepackage[eulerchapternumbers,beramono,pdfspacing]{classicthesis}
+\usepackage{arsclassica}
+\usepackage[swapnames,signatures]{frontespizio}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{indentfirst}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage[italian]{varioref}
+\usepackage{quoting}
+\usepackage[smaller,nolist]{acronym}
+\usepackage{afterpage}
+\quotingsetup{font=small}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage{colortbl}
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\omissis}{[\textellipsis\unkern]}
+\newcommand{\inglese}[1]{\foreignlanguage{english}{\em #1}}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\renewcommand{\LettrineFontHook}{\fontfamily{calligra}}
+\renewcommand{\LettrineTextFont}{\itshape}
+\onehalfspacing
+\addbibresource{bibliografia.bib}
+\renewcommand{\tablename}{}
+\usepackage[hyphenbreaks]{breakurl}
+
+
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%
+%\raggedbottom

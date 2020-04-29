@@ -1,0 +1,36 @@
+%per aggiungere il frontespizio all'indice
+\phantomsection
+\addcontentsline{toc}{chapter}{Frontespizio}
+
+\begin{frontespizio}
+
+    %per i puntini per la firma
+    \makeatletter\@makeother\#
+    \Preambolo{\makeatletter}
+    \Preambolo{\renewcommand{\Relatore}[1]{
+        \advance\front@relcount\@ne
+            \front@reltoks=\expandafter{\the\front@reltoks\\#1%
+                \ifdefined\front@signatures\\[1cm]
+                \dotfill\\\fi
+            }
+        }
+    }
+    
+    \Preambolo{\makeatother}
+
+    \Universita{Nomeuniversita}
+    \Filigrana[height=3cm,before=2,after=7]{img/unipd}
+    \Dipartimento{Nomedipartimento}
+    \Corso[Laurea]{Nome corso di laurea}
+    \Annoaccademico{annoaccademico}
+    \Titolo{Titolo\par
+            a capo}
+    \Sottotitolo{Sottotitolo}
+    \NCandidato{Laureando}
+    \Candidato{Nome Cognome\\\\\\\dotfill}
+    \Relatore{Prof.~Nome Cognome}
+    \Punteggiatura{}
+    %\Rientro{3cm}
+    \Margini{4cm}{5cm}{4cm}{3cm}
+    \Preambolo{\usepackage{iwona}}
+\end{frontespizio}

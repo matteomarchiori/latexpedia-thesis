@@ -1,0 +1,35 @@
+\chapter{Nomecapitolo\label{sec:labelcapitolo}}
+\lettrine[findent=1.5em]{T}esto.
+
+\section{Nomesezione\label{sec:labelsezione}}
+
+Questo è un numero in cifre: $304$.
+Questo è un acronimo: \ac{CFU}.
+
+\begin{table}[htp]
+    \centering
+    \normalsize
+    \begin{tabularx}{\textwidth}{Xl}
+        \toprule
+        \textbf{Titolo} & \textbf{Titolo}\\
+        \midrule
+        contenuto & \textcolor{green}{contenuto}\\
+        \midrule
+        contenuto & \textcolor{green}{contenuto}\\
+        \bottomrule
+    \end{tabularx}
+    \caption{Caption}
+    \label{tab:labeltabella}
+\end{table}
+
+Esempio di riferimento a sezione (si veda la sezione~\vref{sec:labelsezione}).
+
+Con due a capo il testo rientra.
+Con un a capo invece si rimane nello stesso paragrafo.
+
+Esempio di lista:
+\begin{itemize}
+    \item item;
+    \item item.
+    \label{lst:labellista}
+\end{itemize}

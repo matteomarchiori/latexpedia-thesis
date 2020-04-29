@@ -1,0 +1,13 @@
+\newpage
+
+%aggiungo all'indice, ma non è un capitolo numerato
+\phantomsection
+\addcontentsline{toc}{chapter}{Sommario}
+\chapter*{Sommario\label{sec:sommario}}
+
+Testo
+
+Descrizioni con links:
+\begin{description}
+    \item[{\hyperref[label]{testo mostrato}}] Eccetera.
+\end{description}

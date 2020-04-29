@@ -1,0 +1,25 @@
+\input{template}
+
+\begin{document}
+    \frontmatter
+    \input{sezioni/frontespizio}
+    \input{sezioni/colophon}
+    \input{sezioni/sommario}
+    \afterpage{\null\thispagestyle{empty}\clearpage}
+    \input{sezioni/ringraziamenti}
+    \afterpage{\null\thispagestyle{empty}\clearpage}
+    \input{sezioni/indici}
+    \afterpage{\null\thispagestyle{empty}\clearpage}
+    \mainmatter
+    \input{sezioni/introduzione}
+    \input{sezioni/descrizione}
+    \input{sezioni/studio}
+    \input{sezioni/progettazione}
+    \input{sezioni/implementazione}
+    \input{sezioni/conclusioni}
+    \backmatter
+    \input{sezioni/acronimi}
+    \input{sezioni/bibliografia}
+%   \input{sezioni/glossario}
+%   \input{sezioni/indiceanalitico}
+\end{document}
